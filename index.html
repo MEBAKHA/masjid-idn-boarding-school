@@ -27,6 +27,14 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
 
+        <!-- goggle font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <!-- font awosome-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
         
 
     </head>
@@ -34,7 +42,7 @@
     <body>
 
         <!-- Spinner Start -->
-        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div id="spinner" class="show w-100 vh-100  bg-primary-subtle position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" role="status"></div>
         </div>
         <!-- Spinner End -->
@@ -68,17 +76,17 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <nav class="navbar navbar-light navbar-expand-lg py-3">
+            <div class="container ">
+                <nav class="navbar navbar-expand-lg py-3 bg-primary-subtle">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="mb-0">THE<span class="text-primary">Mosque</span> </h1>
+                        <h1 class="mb-0">Masjid<span class="text-info"> al Mukhlisin</span> </h1>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars text-primary"></span>
+                        <span class="fa fa-bars text-info"></span>
                     </button>
-                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="collapse navbar-collapse bg-primary-subtle" id="navbarCollapse">
                         <div class="navbar-nav ms-lg-auto mx-xl-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="index.html" class="nav-item nav-link active text-info">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="activity.html" class="nav-item nav-link">Activities</a>
                             <a href="event.html" class="nav-item nav-link">Events</a>
@@ -94,7 +102,7 @@
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
-                        <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block">Donate</a>
+                        <a href="" class="text-info py-2 px-4 d-none d-xl-inline-block">Donate</a>
                     </div>
                 </nav>
             </div>
@@ -108,10 +116,15 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="hero-header-inner animated zoomIn">
-                            <p class="fs-4 text-dark">WELCOME TO THEMosque</p>
-                            <h1 class="display-1 mb-5 text-dark">Purity Comes From Faith</h1>
+                            <p class="fs-4 text-dark">assalamualaikum welcome to Masjid al Mukhlisin</p>
+                            <h1 class="display-1 mb-5 text-dark">Allah Help Those Who Help Themselves</h1>
+                         <div id="clock-bar" class="text-center bg-primary small mb-3" style="font-family:monospace;letter-spacing:1px;">
+                            --:--:--
+                         </div>
+                          
                             <a href="" class="btn btn-primary py-3 px-5">Read More</a>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -135,25 +148,34 @@
                         </div>
                     </div>
                     <div class="col-xl-6 wow fadeIn" data-wow-delay="0.5s">
-                        <p class="fs-5 text-uppercase text-primary">About THEMosque</p>
-                        <h1 class="display-5 pb-4 m-0">Allah Help Those Who Help Themselves</h1>
-                        <p class="pb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam. Etiam quis mauris justo. Vivamus purus nulla, rutrum ac risus in.</p>
+                        <p class="fs-5 text-uppercase text-primary">About Masjid al-Mukhlisin</p>
+                        <h1 class="display-5 pb-4 m-0 text-white">Shalat adalah tiang agama</h1>
+                        <p class="pb-4 text-white ">masjid adalah rumah allah. <br> kita sebagai umat muslim harus menghias masjid, bukan hanya dengan hiasan seperti al-qur'an, lemari, dll. tapi ada yang lebih indah lagi dari itu <br><span class="text-primary fw-bolder fs-5">yaitu shalat </span> <br>Dari Mu’adz bin Jabal, Nabi shallallahu ‘alaihi wa sallam bersabda,<br>
+
+                        رَأْسُ الأَمْرِ الإِسْلاَمُ وَعَمُودُهُ الصَّلاَةُ<br>
+
+                        “Inti (pokok) segala perkara adalah Islam dan tiangnya (penopangnya) adalah shalat.” (HR. Tirmidzi no. 2616 dan Ibnu Majah no. 3973. Al Hafizh Abu Thohir mengatakan bahwa hadits ini hasan) <br> <br>
+
+                        Dalam hadits ini disebut bahwa shalat dalam agama Islam adalah sebagai tiang penopang yang menegakkan kemah. Kemah tersebut bisa roboh (ambruk) dengan patahnya tiangnya. Begitu juga dengan islam, bisa ambruk dengan hilangnya shalat. Demikianlah cara berdalil Imam Ahmad dengan hadits ini. </p>
+
+                        <div id="clock-bar" class="text-center text-secondary small mb-3" style="font-family:monospace;letter-spacing:1px;">
+    
                         <div class="row g-4 mb-4">
                             <div class="col-md-6">
                                 <div class="ps-3 d-flex align-items-center justify-content-start">
-                                    <span class="bg-primary btn-md-square rounded-circle mt-4 me-2"><i class="fa fa-eye text-dark fa-4x mb-5 pb-2"></i></span>
+                                    <span class=""><i class="fa-solid fa-star-and-crescent fa-4x mb-5 fa-beat" style="color: #ffffff;"></i></span>
                                     <div class="ms-4">
-                                        <h5>Our Vision</h5>
-                                        <p>Lorem ipsum dolor sit amet tetur nod elit sed</p>
+                                        <h5 class="text-white fst-italic">jadwal kajian</h5>
+                                        <p>senin- kamis jam 09.26 - 11.00</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="ps-3 d-flex align-items-center justify-content-start">
-                                    <span class="bg-primary btn-md-square rounded-circle mt-4 me-2"><i class="fa fa-flag text-dark fa-4x mb-5 pb-2"></i></span>
+                                    <span ><i class="fa-solid fa-book-quran fa-4x mb-5 fa-beat" style="color: #ffffff;"></i></span>
                                     <div class="ms-4">
-                                        <h5>Our Mission</h5>
-                                        <p>Lorem ipsum dolor sit amet tetur nod elit sed</p>
+                                        <h5 class=" text-white fst-italic">kegiatan takhsin </h5>
+                                        <p> setiap hari jam 21.00 - 22.00</p>
                                     </div>
                                 </div>
                             </div>
@@ -161,25 +183,24 @@
                         <div class="bg-light p-3 mb-4">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-3">
-                                    <img src="img/about-child.jpg" class="img-fluid rounded-circle" alt="">
+                                    <img src="img/6-Ft-C-Ijen-ngaji-napi.webp" class="img-fluid" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam. Etiam quis mauris justo.</p>
+                                    <p class="mb-0">kegiatan belajar mengaji untuk anak anak 6-15 tahun</p>
                                 </div>
                                 <div class="col-3">
-                                        <h2 class="mb-0 text-primary text-center">$20,46</h2>
-                                        <h5 class="mb-0 text-center">Raised</h5>
+                                        <h5 class="mb-0 text-center">GRATIS</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="row g-2">
                             <div class="col-md-6">
-                                <p class="mb-2"><i class="fa fa-check text-primary me-3"></i>Charity & Donation</p>
-                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Parent Education</p>
+                                <p class="mb-2"><i class="fa fa-check text-primary me-3"></i>lancar mengaji</p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>jago coding</p>
                             </div>
                             <div class="col-md-6">
-                                <p class="mb-2"><i class="fa fa-check text-primary me-3"></i>Hadith & Sunnah</p>
-                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Mosque Development</p>
+                                <p class="mb-2"><i class="fa fa-check text-primary me-3"></i>jago bahasa arab</p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>jago hadist, dan ilmu dunia & akhirat</p>
                             </div>
                         </div>
                     </div>
@@ -190,7 +211,7 @@
                             <i class="fa fa-mosque fa-5x text-white"></i>
                         </div>
                         <div class="col-lg-7 text-center text-lg-start">
-                            <h1 class="mb-0">Every Muslim Needs To Realise The Importance Of The "Pillar" Of Islam</h1>
+                            <h1 class="mb-0">JADWAL SHALAT </h1>
                         </div>
                         <div class="col-lg-3">
                             <a href="" class="btn btn-light py-2 px-4">Learn More</a>
@@ -821,6 +842,19 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        
+        <script>
+                
+            function updateClock() {
+            const now = new Date();
+            const h = String(now.getHours()).padStart(2, '0');
+            const m = String(now.getMinutes()).padStart(2, '0');
+            const s = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock-bar').textContent = `${h}:${m}:${s}`;
+            }
+            setInterval(updateClock, 1000);
+            updateClock();
+        </script>
     </body>
 
 </html>
