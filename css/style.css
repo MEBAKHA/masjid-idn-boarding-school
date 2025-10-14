@@ -147,7 +147,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .navbar .navbar-nav .nav-link.active,
 .fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
 .fixed-top.bg-primary-subtle .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: var(--bs-info);
 }
 
 .navbar .dropdown-toggle::after {
@@ -199,8 +199,9 @@ h4, h5, h6, .h4, .h5, .h6 {
     margin-bottom: 6rem;
     padding-top: 15rem;
     padding-bottom: 6rem;
-    background: url("../img/hero.jpg"), center center no-repeat;
-    background-size: cover;
+    background: url("../img/image.png"), center center no-repeat;
+    
+    size: cover;
 }
 
 .hero-header .hero-header-inner {
