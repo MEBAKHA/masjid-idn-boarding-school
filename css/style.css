@@ -1,3 +1,11 @@
+.btn-donate:hover{
+    background-color: blue;
+    color: black !important;
+}
+.btn-join:hover {
+    background-color: black;
+    color: white !important;
+}
 
 /*** Spinner Start ***/
 
@@ -94,15 +102,15 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .btn.btn-primary:hover {
-    color: var(--bs-primary) !important;
-    background: var(--bs-dark) !important;
-    border-color: var(--bs-dark) !important;
+    color: var(--bs-black) !important;
+    background: var(--bs-black) !important;
+    border-color: var(--bs-black) !important;
 }
 
 .btn.btn-dark:hover {
-    color: var(--bs-dark) !important;
-    background: var(--bs-primary) !important;
-    border-color: var(--bs-primary) !important;
+    color: var(--bs-primary) !important;
+    background: var(--bs-info) !important;
+    border-color: var(--bs-info) !important;
 }
 /*** Button End ***/
 
@@ -121,7 +129,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .topbar a:hover,
 .topbar a i:hover {
-    color: var(--bs-primary) !important;
+    color: var(--bs-light) !important;
 }
 /*** Topbar End ***/
 
@@ -147,7 +155,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .navbar .navbar-nav .nav-link.active,
 .fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
 .fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: var(--bs-light) !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -199,8 +207,9 @@ h4, h5, h6, .h4, .h5, .h6 {
     margin-bottom: 6rem;
     padding-top: 15rem;
     padding-bottom: 6rem;
-    background: url("../img/hero.jpg"), center center no-repeat;
+    background: url("../img/masjid\ idn.jpg"), center center no-repeat;
     background-size: cover;
+    z-index: 1;
 }
 
 .hero-header .hero-header-inner {
