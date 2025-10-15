@@ -44,7 +44,7 @@
 
 .back-to-top:hover {
     background: var(--bs-dark);
-    color: var(--bs-primary);
+    color: var(--bs-info);
 }
 
 h1, h2, h3, .h1, .h2, .h3 {
@@ -101,7 +101,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     font-weight: normal;
 }
 
-.btn.btn-primary:hover {
+.btn.btn-info:hover {
     color: var(--bs-info) !important;
     background: var(--bs-dark) !important;
     border-color: var(--bs-dark) !important;
@@ -109,8 +109,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .btn.btn-dark:hover {
     color: var(--bs-dark) !important;
-    background: var(--bs-primary) !important;
-    border-color: var(--bs-primary) !important;
+    background: var(--bs-info) !important;
+    border-color: var(--bs-info) !important;
 }
 /*** Button End ***/
 
@@ -154,7 +154,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active,
 .fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
-.fixed-top.bg-primary-subtle .navbar .navbar-nav .nav-link.active {
+.fixed-top.bg-info-subtle .navbar .navbar-nav .nav-link.active {
     color: var(--bs-info);
 }
 
@@ -186,7 +186,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     .navbar .nav-item:hover .dropdown-menu {
         transform: rotateX(0deg);
         visibility: visible;
-        background: var(--bs-light) !important;
+        background-color: rgb(0, 153, 255);
         transition: .5s;
         opacity: 1;
     }
@@ -196,7 +196,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     background: var(--bs-secondary);
     color: var(--bs-light) !important;
     padding: 10px 20px;
-    border: 2px solid var(--bs-primary) !important;
+    border: 2px solid var(--bs-info) !important;
     box-shadow: none !important;
 }
 /*** Navbar End ***/
@@ -231,7 +231,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 /*** About Start ***/
 .about a.btn.btn-light:hover {
     background: var(--bs-dark) !important;
-    color: var(--bs-primary) !important;
+    color: var(--bs-info) !important;
     border: 0;
 }
 /*** About End ***/
@@ -280,7 +280,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .event-item a:hover {
     background: var(--bs-dark);
-    color: var(--bs-primary);
+    color: var(--bs-info);
     opacity: 0.5s;
 }
 /*** Events End ***/
@@ -307,7 +307,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .sermon-item .sermon-meta a:hover,
 .sermon-item .sermon-meta a i:hover {
-    color: var(--bs-primary) !important;
+    color: var(--bs-info) !important;
 }
 /*** Sermon End ***/
 
@@ -333,7 +333,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .blog-item .blog-meta a:hover,
 .blog-item .blog-meta a i:hover {
-    color: var(--bs-primary) !important;
+    color: var(--bs-info) !important;
 }
 /*** Blog End ***/
 
@@ -424,7 +424,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .testimonial-carousel .owl-nav .owl-prev:hover {
     background: var(--bs-dark) !important;
-    color: var(--bs-primary) !important;
+    color: var(--bs-info) !important;
 }
 
 .testimonial-carousel .owl-nav .owl-next {
@@ -434,7 +434,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .testimonial-carousel .owl-nav .owl-next:hover {
     background: var(--bs-dark) !important;
-    color: var(--bs-primary) !important;
+    color: var(--bs-info) !important;
 }
 /*** testimonial End ***/
 
@@ -462,13 +462,13 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .footer button:hover {
     background: var(--bs-dark);
-    color: var(--bs-primary);
+    color: var(--bs-info);
 }
 
 .footer-item a.btn.btn-light:hover {
-    background: var(--bs-primary);
+    background: var(--bs-info);
     color: var(--bs-dark) !important;
-    border: var(--bs-primary);
+    border: var(--bs-info);
 }
 
 .footer-item a,
@@ -478,6 +478,6 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .footer-item a:hover,
 .footer-item a i:hover {
-    color: var(--bs-primary) !important;
+    color: var(--bs-info) !important;
 }
 /*** Footer End ***/
