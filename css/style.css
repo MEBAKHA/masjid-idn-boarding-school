@@ -1,3 +1,11 @@
+.btn-donate:hover{
+    background-color: blue;
+    color: black !important;
+}
+.btn-join:hover {
+    background-color: black;
+    color: white !important;
+}
 
 /*** Spinner Start ***/
 
@@ -101,8 +109,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .btn.btn-dark:hover {
     color: var(--bs-dark) !important;
-    background: var(--bs-info) !important;
-    border-color: var(--bs-blue) !important;
+    background: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
 }
 /*** Button End ***/
 
@@ -121,7 +129,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .topbar a:hover,
 .topbar a i:hover {
-    color: var(--bs-primary) !important;
+    color: var(--bs-light) !important;
 }
 /*** Topbar End ***/
 
@@ -199,9 +207,8 @@ h4, h5, h6, .h4, .h5, .h6 {
     margin-bottom: 6rem;
     padding-top: 15rem;
     padding-bottom: 6rem;
-    background: url("../img/image.png"), center center no-repeat;
-    
-    size: cover;
+    background: url("../img/hero.jpg"), center center no-repeat;
+    background-size: cover;
 }
 
 .hero-header .hero-header-inner {
