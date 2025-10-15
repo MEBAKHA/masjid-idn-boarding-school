@@ -102,15 +102,15 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .btn.btn-primary:hover {
-    color: var(--bs-black) !important;
-    background: var(--bs-black) !important;
-    border-color: var(--bs-black) !important;
+    color: var(--bs-info) !important;
+    background: var(--bs-dark) !important;
+    border-color: var(--bs-dark) !important;
 }
 
 .btn.btn-dark:hover {
-    color: var(--bs-primary) !important;
-    background: var(--bs-info) !important;
-    border-color: var(--bs-info) !important;
+    color: var(--bs-dark) !important;
+    background: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
 }
 /*** Button End ***/
 
@@ -140,7 +140,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .navbar {
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(235, 205, 205, 0.5);
 }
 
 .navbar .navbar-nav .nav-link {
@@ -248,7 +248,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .activities .activities-item:hover {
-    background: var(--bs-primary) !important;
+    background: var(--bs-info) !important;
     color: var(--bs-dark) !important;
 }
 
@@ -259,7 +259,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .activities .activities-item:hover a:hover {
     background: var(--bs-dark) !important;
-    color: var(--bs-primary) !important;
+    color: var(--bs-info) !important;
 }
 /*** Activities End ***/
 
@@ -342,7 +342,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .team .team-img {
     height: 100%;
     padding: 25px;
-    background: var(--bs-white);
+    background: var(--bs-cyan);
     overflow: hidden;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
 }
@@ -413,7 +413,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     position: absolute;
     width: 60px;
     height: 40px;
-    background: var(--bs-primary);
+    background: var(--bs-blue);
     color: var(--bs-dark);
     font-size: 22px;
     top: 50%;
