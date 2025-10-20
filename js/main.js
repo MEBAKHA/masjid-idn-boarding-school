@@ -49,7 +49,7 @@
 
 
     // Testimonial carousel
-    $(".testimonial-carousel").owlCarousel({
+        $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
         dots: false,
@@ -57,8 +57,8 @@
         margin: 25,
         nav : true,
         navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
+            '<i class="bi bi-arrow-left text-info"></i>',
+            '<i class="bi bi-arrow-right text-info"></i>'
         ],
         responsive: {
             0:{
@@ -78,3 +78,29 @@
 
 })(jQuery);
 
+// Payment 
+document.getElementById('paymentForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const cardNumber = document.getElementById('cardNumber').value.replace(/\s/g, '');
+  const expDate = document.getElementById('expDate').value;
+  const cvv = document.getElementById('cvv').value;
+
+  // Simple regex & logic checks
+  if (!/^\d{16}$/.test(cardNumber)) {
+    alert('Nomor kartu harus 16 digit!');
+    return;
+  }
+
+  if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expDate)) {
+    alert('Tanggal kedaluwarsa harus dalam format MM/YY!');
+    return;
+  }
+
+  if (!/^\d{3,4}$/.test(cvv)) {
+    alert('CVV tidak valid!');
+    return;
+  }
+
+  alert('✅ Validasi berhasil! (Mockup, data tidak dikirim)');
+});
