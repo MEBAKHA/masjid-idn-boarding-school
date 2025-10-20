@@ -1,3 +1,25 @@
+.foto-team {
+    max-height: 289px; 
+    overflow: hidden; 
+    object-fit: cover; 
+    object-position: center;
+}
+@media (max-width: 1439px) {
+    .foto-team {
+        max-height: 242.49px; 
+    }
+}
+@media (max-width: 992px) {
+    .foto-team {
+        max-height: 270px; 
+    }
+}
+@media (max-width: 426px) {
+    .foto-team {
+        max-height: 472px; 
+    }
+}
+
 .btn-donate:hover{
     background-color: blue;
     color: black !important;
