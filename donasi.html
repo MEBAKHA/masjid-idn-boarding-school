@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-        <html lang="id">    <head>
-        <meta charset="utf-8">
-        <title>Masjid Al-Mukhlisin | Khotbah</title>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+        <title>Masjid Al-Mukhlisin | Pembayaran</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="khotbah, kajian islam, masjid al-mukhlisin, ceramah" name="keywords">
-        <meta content="Kumpulan khotbah dan kajian Islam di Masjid Al-Mukhlisin" name="description">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
          <!-- favicon -->
          <link rel="shortcut icon" href="img/masjid al mukhlisin.jpg" type="image/x-icon">
@@ -27,14 +28,38 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+    
+    *{box-sizing:border-box}
+    h2{margin:0 0 18px 0; font-size:22px}
+    .hint{color:var(--muted); font-size:14px; margin-bottom:18px}
+    .pay-method{display:flex; gap:18px; align-items:center; margin-bottom:18px}
+    .radio{display:flex; gap:10px; align-items:center; background:transparent; border-radius:8px; padding:6px;}
+    .radio input{appearance:none; width:18px; height:18px; border-radius:50%; border:2px solid #4b4b4b; display:inline-block; position:relative}
+    .radio input:checked{background:radial-gradient(circle at center, #4a00ff 45%, transparent 46%); border-color:#4a00ff}
+    .paypal{display:inline-flex; gap:8px; align-items:center; color:#0f6bf0; font-weight:600}
 
-        
+    .grid{ display:grid; grid-template-columns: 1fr 1fr; gap:16px 20px; }
+    .full{grid-column:1 / -1}
+    label{display:block; font-size:14px; margin-bottom:8px; color:#222}
+    input[type="text"], input[type="tel"], input[type="month"], select{
+      width:100%; padding:12px 14px; border-radius:8px; border:1.5px solid var(--border); outline:none; font-size:15px; background:#fff;
+    }
+    input::placeholder{color:#bdbdbd}
+    .card-icons{display:flex; gap:10px; align-items:center; margin-top:8px}
+    .card-icon{height:26px; width:auto; display:inline-block; opacity:0.95}
 
-    </head>
+    
 
-    <body>
+    
+   
 
-       <!-- Spinner Start -->
+    
+  </style>
+</head>
+<body>
+
+    <!-- Spinner Start -->
         <div id="spinner" class="show w-100 vh-100  bg-info-subtle position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-info" role="status"></div>
         </div>
@@ -83,9 +108,9 @@
                             <a href="about.html" class="nav-item nav-link">Tentang</a>
                             <a href="activity.html" class="nav-item nav-link">Aktivitas</a>
                             <a href="event.html" class="nav-item nav-link">Acara</a>
-                            <a href="sermon.html" class="nav-item nav-link active">khotbah</a>
+                            <a href="sermon.html" class="nav-item nav-link">khotbah</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Halaman</a>
+                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Halaman</a>
                                 <div class="dropdown-menu m-0 rounded-0">
                                     <a href="blog.html" class="dropdown-item text-white">Blog Terbaru</a>
                                     <a href="team.html" class="dropdown-item text-white">Tim Kami</a>
@@ -95,7 +120,7 @@
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Kontak</a>
                         </div>
-                        <a href="" class="text-info py-2 px-4 d-none d-xl-inline-block bg-info text-dark fw-bold">Donasi</a>
+                        <a href="donasi.html" class="text-info py-2 px-4 d-none d-xl-inline-block bg-info text-dark fw-bold active">Donasi</a>
                     </div>
                 </nav>
             </div>
@@ -109,11 +134,11 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="hero-header-inner animated zoomIn">
-                            <h1 class="display-1 text-dark">Khotbah</h1>
+                            <h1 class="display-1 text-dark">Donasi</h1>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
                                 <li class="breadcrumb-item"><a href="contact.html">Lainnya</a></li>
-                                <li class="breadcrumb-item text-dark" aria-current="page">Khotbah</li>
+                                <li class="breadcrumb-item text-dark" aria-current="page">Donasi</li>
                             </ol>
                         </div>
                     </div>
@@ -121,92 +146,82 @@
             </div>
         </div>
         <!-- Hero End -->
+         
+        <!-- Payment Start -->
+  <section class="payment-section">
+    <h1 class="text-center mb-5 fw-bold text-info">Metode Pembayaran</h1>
+    <form id="paymentForm " class="form-card " style="padding: 100px;">
+      <div class="method">
+        <label><input type="radio" name="method" value="card" checked> Credit/debit card</label>
+        <label><input type="radio" name="method" value="paypal"> <button type="button" class="paypal-btn">PayPal</button></label>
+      </div>
 
+      <label>Card number*</label>
+      <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+      <div class="card-icons">
+        <span class="visa">VISA</span>
+        <span class="mc">MC</span>
+        <span class="amex">AMEX</span>
+        <span class="union">Union</span>
+      </div>
 
-        <!-- Sermon Start -->
-        <div class="container-fluid sermon py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto mb-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-                                <p class="fs-5 text-uppercase text-info">Khotbah</p>
-                    <h1 class="display-3">Bergabung dalam Komunitas Islam</h1>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="sermon-item wow fadeIn" data-wow-delay="0.1s">
-                            <div class="overflow-hidden p-4 pb-0">
-                                <img src="img/mendekatkan diri kepada allah.jpg" class="img-fluid w-100" alt="">
-                            </div>
-                            <div class="p-4">
-                                <div class="sermon-meta d-flex justify-content-between pb-2">
-                                    <div class="">
-                                        <small><i class="fa fa-calendar me-2 text-muted"></i><a href="" class="text-muted me-2">13 Nov 2023</small></a>
-                                        <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted">Admin</small></a>
-                                    </div>
-                                    <div class="">
-                                        <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
-                                        <a href="" class="me-1"><i class="fas fa-headphones text-muted"></i></a>
-                                        <a href="" class="me-1"><i class="fas fa-file-alt text-muted"></i></a>
-                                        <a href="" class=""><i class="fas fa-image text-muted"></i></a>
-                                    </div>
-                                </div>
-                                <a href="" class="d-inline-block h4 lh-sm mb-3">Cara Mendekatkan Diri kepada Allah</a>
-                                <p class="mb-0">Dalam gambar ini, sekelompok jamaah terlihat sedang mengikuti acara doa bersama. Artikel ini membahas langkah-langkah praktis untuk memperdalam iman dan mendekatkan diri kepada Allah melalui ibadah, refleksi, dan akhlak yang baik. Suasana khusyuk mengingatkan kita akan pentingnya konsistensi dalam perjalanan spiritual.</p>
-                            </div>
-                        </div>
-                    </div>
-                   <div class="col-lg-6 col-xl-4">
-                        <div class="sermon-item wow fadeIn" data-wow-delay="0.3s">
-                            <div class="overflow-hidden p-4 pb-0">
-                                <img src="img/events-1.jpg" class="img-fluid w-100" alt="">
-                            </div>
-                            <div class="p-4">
-                                <div class="sermon-meta d-flex justify-content-between pb-2">
-                                    <div class="">
-                                        <small><i class="fa fa-calendar me-2 text-muted"></i><a href="" class="text-muted me-2">13 Nov 2023</small></a>
-                                        <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted">Admin</small></a>
-                                    </div>
-                                    <div class="">
-                                        <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
-                                        <a href="" class="me-1"><i class="fas fa-headphones text-muted"></i></a>
-                                        <a href="" class="me-1"><i class="fas fa-file-alt text-muted"></i></a>
-                                        <a href="" class=""><i class="fas fa-image text-muted"></i></a>
-                                    </div>
-                                </div>
-                                <a href="" class="d-inline-block h4 lh-sm mb-3">Pentingnya Ibadah Haji dalam Islam</a>
-                                <p class="mb-0">Haji merupakan salah satu rukun Islam yang wajib bagi yang mampu. Foto ini menggambarkan jutaan jamaah yang berkumpul di Makkah untuk melaksanakan ibadah haji. Ibadah ini mengajarkan pengorbanan, kesabaran, dan persatuan umat, sekaligus menjadi momentum penyucian batin dan penguatan hubungan dengan Allah.</p>
-                            </div>
-                        </div>
-                    </div>
-                   <div class="col-lg-6 col-xl-4">
-                        <div class="sermon-item wow fadeIn" data-wow-delay="0.5s">
-                            <div class="overflow-hidden p-4 pb-0">
-                                <img src="img/Memahami-rukun-islam-yang-baik-dan-benar-9-2048.webp" class="img-fluid w-100" alt="">
-                            </div>
-                            <div class="p-4">
-                                <div class="sermon-meta d-flex justify-content-between pb-2">
-                                    <div class="">
-                                        <small><i class="fa fa-calendar me-2 text-muted"></i><a href="" class="text-muted me-2">13 Nov 2023</small></a>
-                                        <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted">Admin</small></a>
-                                    </div>
-                                    <div class="">
-                                        <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
-                                        <a href="" class="me-1"><i class="fas fa-headphones text-muted"></i></a>
-                                        <a href="" class="me-1"><i class="fas fa-file-alt text-muted"></i></a>
-                                        <a href="" class=""><i class="fas fa-image text-muted"></i></a>
-                                    </div>
-                                </div>
-                                <a href="" class="d-inline-block h4 lh-sm mb-3">Pentingnya Rukun Islam</a>
-                                <p class="mb-0">Gambar ini menampilkan jamaah yang sedang melaksanakan salat berjamaah di masjid, menggambarkan salah satu pilar utama dalam agama Islam. Salat adalah tiang agama yang menjadi penghubung langsung antara hamba dan Pencipta, serta fondasi bagi disiplin dan kehidupan spiritual yang konsisten.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div>
+          <label>Total</label>
+          <input type="text" id="expDate" placeholder="Rp. 000.000.000.000.000.000" maxlength="5" required>
         </div>
-        <!-- Sermon End -->
+        <div>
+          <label>Rupiah</label>
+          <input type="text" id="cvv" placeholder="123" maxlength="4" required>
+        </div>
+      </div>
 
+      <div class="row">
+        <div>
+          <label>Tanggal Kedaluwarsa* (MM/YY)</label>
+          <input type="text" id="expDate" placeholder="MM / YY" maxlength="5" required>
+        </div>
+        <div>
+          <label>CVV*</label>
+          <input type="text" id="cvv" placeholder="123" maxlength="4" required>
+        </div>
+      </div>
 
-        <!-- Footer Start -->
+      <div class="row">
+        <div>
+          <label>Nama Depan*</label>
+          <input type="text" id="firstName" placeholder="Nama depan" required>
+        </div>
+        <div>
+          <label>Nama Belakang*</label>
+          <input type="text" id="lastName" placeholder="Nama belakang" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Negara*</label>
+          <select id="country" required>
+            <option value="">-- Pilih negara --</option>
+            <option value="ID">Indonesia</option>
+            <option value="MY">Saudi Arabia</option>
+            <option value="SG">Mesir</option>
+            <option value="US">United States</option>
+          </select>
+        </div>
+        <div>
+          <label>Kode Pos*</label>
+          <input type="text" id="postal" placeholder="Kode pos" required>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Selesaikan Pembayaran</button>
+      <p class="note">Ini adalah mockup. Data tidak dikirim. Karena Belum Belajar Back-end</p>
+    </form>
+  </section>
+    <!-- Payment End -->
+
+  <!-- Footer Start -->
         <div class="container-fluid footer pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row py-5">
@@ -320,6 +335,5 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-    </body>
-
+</body>
 </html>

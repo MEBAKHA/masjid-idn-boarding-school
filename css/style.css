@@ -1,3 +1,25 @@
+.foto-team {
+    max-height: 289px; 
+    overflow: hidden; 
+    object-fit: cover; 
+    object-position: center;
+}
+@media (max-width: 1439px) {
+    .foto-team {
+        max-height: 242.49px; 
+    }
+}
+@media (max-width: 992px) {
+    .foto-team {
+        max-height: 270px; 
+    }
+}
+@media (max-width: 426px) {
+    .foto-team {
+        max-height: 472px; 
+    }
+}
+
 .btn-donate:hover{
     background-color: blue;
     color: black !important;
@@ -482,6 +504,44 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 /*** Footer End ***/
 
+/* === ANIMASI LOGO AUTO SCROLL TANPA PUTUS === */
+
+.logo-slider {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fff;
+  padding: 40px 0;
+}
+
+.logo-track {
+  display: inline-flex;
+  animation: scroll 25s linear infinite;
+}
+
+.logo-track img {
+  height: 60px;
+  margin: 0 40px;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.logo-track img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Animasi jalan terus tanpa putus */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* === ANIMASI LOGO AUTO SCROLL TANPA PUTUS  === */
+
 /*** Contact Form Styles ***/
 .contact .form-control.bg-transparent {
     background: rgba(255, 255, 255, 0.9) !important;
@@ -502,3 +562,4 @@ h4, h5, h6, .h4, .h5, .h6 {
     min-height: 150px;
 }
 /*** Contact Form End ***/
+
